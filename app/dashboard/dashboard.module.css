@@ -1,0 +1,158 @@
+.page { padding-top: 28px; padding-bottom: 40px; }
+
+.head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(28px, 3.4vw, 38px);
+  color: var(--black);
+  margin: 0;
+}
+
+.sub { color: var(--muted); font-size: 15px; margin: 6px 0 0; }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+  margin: 22px 0 26px;
+}
+.stat {
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--brand);
+  border-radius: 6px;
+  padding: 14px 16px;
+}
+.statNum {
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--black);
+}
+.statLabel { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+.rowTitle {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--black);
+  display: inline-block;
+}
+
+.rowActions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.rowActions form { display: inline-block; }
+
+/* tabs */
+.tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 18px 0;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0;
+}
+.tab {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 3px solid transparent;
+  color: var(--muted);
+}
+.tab:hover { text-decoration: none; color: var(--ink); }
+.tabActive { color: var(--ink); border-bottom-color: var(--brand); }
+.tabCount {
+  display: inline-block;
+  margin-left: 6px;
+  background: var(--chip);
+  border-radius: 999px;
+  padding: 1px 8px;
+  font-size: 12px;
+}
+
+/* admin two-column: list + form */
+.panelGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 32px;
+  align-items: start;
+}
+.panelCard {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+  background: var(--surface);
+}
+.panelCard h2 {
+  font-family: var(--serif);
+  font-size: 20px;
+  margin: 0 0 14px;
+}
+
+.inlineForm {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.inlineForm .input { max-width: 220px; width: auto; min-width: 140px; }
+.inlineForm .select { width: auto; }
+
+.feedRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+.feedName { font-weight: 700; font-size: 15px; }
+.feedUrl {
+  font-size: 13px;
+  color: var(--muted);
+  max-width: 480px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+.feedActions { display: flex; gap: 8px; align-items: center; }
+
+.formStack { display: flex; flex-direction: column; gap: 4px; }
+
+.settingsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+.settingsCard {
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--ink);
+  border-radius: 8px;
+  padding: 22px;
+}
+.settingsCard h2 {
+  font-family: var(--serif);
+  font-size: 20px;
+  margin: 0 0 4px;
+}
+.settingsCard .hint { margin: 0 0 16px; color: var(--muted); font-size: 14px; }
+
+@media (max-width: 1000px) {
+  .panelGrid { grid-template-columns: 1fr; }
+}

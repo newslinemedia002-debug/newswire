@@ -1,0 +1,62 @@
+.wrap {
+  padding-top: 40px;
+  padding-bottom: 56px;
+}
+
+.doc {
+  max-width: 760px;
+}
+
+.doc h1 {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(30px, 4vw, 42px);
+  color: var(--black);
+  margin: 0 0 6px;
+}
+
+.updated {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 28px;
+}
+
+.doc section {
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+  margin-top: 22px;
+}
+
+.doc h2 {
+  font-family: var(--serif);
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--black);
+  margin: 0 0 8px;
+}
+
+.doc p,
+.doc li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.doc p { margin: 0 0 12px; }
+
+.doc ul {
+  margin: 0 0 14px;
+  padding-left: 22px;
+}
+
+.doc li { margin-bottom: 8px; }
+
+.doc a { color: var(--brand); }
+
+.doc code {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 14px;
+}

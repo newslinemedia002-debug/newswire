@@ -1,0 +1,27 @@
+.tabs {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin: 18px 0 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.tab {
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
+}
+.tab:hover { text-decoration: none; color: var(--ink); }
+.tabActive { color: var(--ink); border-bottom-color: var(--brand); }
+
+.tabCount {
+  display: inline-block;
+  margin-left: 6px;
+  background: var(--chip);
+  border-radius: 999px;
+  padding: 1px 8px;
+  font-size: 12px;
+}
